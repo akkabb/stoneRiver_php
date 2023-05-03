@@ -643,6 +643,214 @@
                 ?>
             </p>
         </section>
+        <section class="functions">
+            <h2>Functions</h2>
+            <div class="code_display">
+                <pre> 
+                    &lt?php
+                        function name($name, $age)
+                        {
+                            return 'My name is '. $name . ' and my age is ' . $age;
+                        }
+                        echo name('Jean', 21);
+                    ?&gt
+                </pre>
+            </div>
+            <p>
+                <?php 
+                    function name($name, $age)
+                    {
+                        return 'My name is '. $name . ' and my age is ' . $age;
+                    }
+                    echo name('Jean', 21);
+                    ?>
+            </p>
+            <div class="code_display">
+                <pre> 
+                    &lt?php
+                        function add($num1, $num2)
+                        {
+                            $result = $num1 + $num2;
+                            return 'the result is: ' . $result;
+                        }
+                        echo add(5, 10);
+                    ?&gt
+                </pre>
+            </div>
+            <p>
+                <?php
+                function add($num1, $num2)
+                {
+                    $result = $num1 + $num2;
+                    return 'the result is: ' . $result;
+                }
+                echo add(5, 10);
+                ?>
+            </p>
+        </section>
+        <section class="functionsWithUndefined">
+            <h2>Function with Undefined</h2>
+            <div class="code_display">
+                <pre>
+                    function adde()
+                    {
+                        $total = 0;
+                        //print_r(func_get_args());
+                        foreach(func_get_args() as $arg)
+                        {
+                            $total += $arg;
+                        }
+                        return $total;
+                    }
+                    echo adde(5, 10, 3);
+                </pre>
+            </div>
+            <p>
+                <?php
+                    function adde()
+                    {
+                        $total = 0;
+                        //print_r(func_get_args());
+                        foreach(func_get_args() as $arg)
+                        {
+                            $total += $arg;
+                        }
+                        return $total;
+                    }
+                    echo adde(5, 10, 3);
+                ?>
+            </p>
+            <div class="code_display">
+                    <pre>
+                        &lt?php 
+                        function append( $initial)
+                        {
+                            $result = func_get_arg(0);
+                            foreach (func_get_args() as $key => $value){
+                                if ($key >= 1){
+                                    $result .= ' ' . $value;
+                                }
+                            }
+                            return $result;
+                        }
+
+                        echo append('Alex', 'James', 'Garett');
+                        ?&gt
+                    </pre>
+            </div>
+            <p>
+                    <?php
+                    function append( $initial)
+                    {
+                        $result = func_get_arg(0);
+                        foreach (func_get_args() as $key => $value){
+                            if ($key >= 1){
+                                $result .= ' ' . $value;
+                            }
+                        }
+                        return $result;
+                    }
+
+                    echo append('Alex', 'James', 'Garett');
+                    ?>
+            </p>
+        </section>
+        <sction class="formattingNumbers">
+            <h2>Formatting Numbers</h2>
+            <div class="code_display">
+                <pre>
+                    &lt?php 
+                        $num = 25123567.1234567;
+                        echo 'I have &pound;', number_format($num, 2, );
+                    ?&gt
+                </pre>
+            </div>
+            <p>
+                <?php
+                    $num = 25123567.1234567;
+                    echo 'I have &pound;', number_format($num, 2);
+                ?>
+            </p>
+        </sction>
+        <section class="glogal_variable_GET">
+            <h2>$_GET</h2>
+            <p><a href="get_page.php">Page For $_GET Examples</a></p>
+        </section>
+        <section class="postGlobalVariables">
+            <h2>$_POST</h2>
+            <p><a href="post_page.php">Page For $_POST Examples</a></p>
+        </section>
+        <section class="embedding">
+            <h2>Embedding PHP within HTML</h2>
+            <p><a href="embedding_page.php">Page For Examples</a></p>
+        </section>
+        <section class="display_htmlBetter">
+            <h2>A better way to display HTML</h2>
+            <p>i didn't learn something new. So i just watched at the video</p>
+        </section>
+        <section class="arrays1">
+            <h2>Arrays(part 1 & 2)</h2>    
+            <div class="code_display">
+                <pre>
+                        &lt?php 
+                        $GLOBALS['level'] = [
+                        1 => [
+                                'name' => 'Level 1',
+                                'desc' => 'This is the first level',
+                            ],
+                            2 => [
+                                'name' => 'Level 2',
+                                'desc' => 'You\'ve made it to level 2!',
+                            ],
+                            3 => [
+                                'name' => 'Level 3',
+                                'desc' => 'The last level',
+                            ],
+                        ];
+                        //without the true in the print_r the display is not formatted!
+                        function level_data($level, $data){
+                            if (array_key_exists($level, $GLOBALS['level'])  === true){
+                                return $GLOBALS['level'][$level][$data];
+                            }else{
+                                return false;
+                            }
+                        }
+                        echo level_data(1, 'desc');
+
+                        echo '<pre>'. print_r($GLOBALS['level'], true) .'</pre>'
+                        ?&gt
+                </pre>
+            </div>
+            <p>
+                <?php
+                    $GLOBALS['level'] = [
+                        1 => [
+                            'name' => 'Level 1',
+                            'desc' => 'This is the first level',
+                        ],
+                        2 => [
+                            'name' => 'Level 2',
+                            'desc' => 'You\'ve made it to level 2!',
+                        ],
+                        3 => [
+                            'name' => 'Level 3',
+                            'desc' => 'The last level',
+                        ],
+                    ];
+                    //without the true in the print_r the display is not formatted!
+                    function level_data($level, $data){
+                        if (array_key_exists($level, $GLOBALS['level'])  === true){
+                            return $GLOBALS['level'][$level][$data];
+                        }else{
+                            return false;
+                        }
+                    }
+                    echo level_data(1, 'desc');
+
+                    echo '<pre>'. print_r($GLOBALS['level'], true) .'</pre>'
+                ?>
+            </p>
+        </section>
     </main>
     <footer>
         <p class="footer">2023 © Tous droits réservés</p>
