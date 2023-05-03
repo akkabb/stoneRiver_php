@@ -98,3 +98,7 @@ END OF SLIDE-MENU
     color: #fff;
     font-size: 1.5rem;
 }
+.forLoopVertical{
+    display: flex;
+    justify-content: space-between;
+}

@@ -9,7 +9,7 @@
             <a href="../index.php">Accueil</a>
         </nav>
     </header> 
-    <main>
+    <main class="main_basics">
         <section class="commentingCode">
             <h2>Commenting Code</h2>
             <h3>Simple line comment :</h3>
@@ -381,9 +381,267 @@
             <h2>Arrays</h2>
             <p>
                 &lt?php <br>
+                $names = ['Alex' => 21, <br>
+                'Billy' => 16, <br>
+                'Dale' => 49];<br>
+                
+                $names[] = 'josh'; <br>
+                echo '&ltbr&gt'; <br>
+                print_r($names); <br>
+                echo '&ltbr&gt'; <br>
+                var_dump($names); <br>
+                echo '&ltbr&gt'; <br>
+                foreach ($names as $name) { <br>
+                    echo $name . '&ltbr&gt'; <br>
+                }; <br>
                 ?&gt <br>
             </p>
-            <p></p>
+            <p>
+                <?php
+                
+                $names = ['Alex' => 21, 
+                'Billy' => 16, 
+                'Dale' => 49];
+                
+                $names[] = 'josh';
+                echo '<br>';
+                print_r($names);
+                echo '<br>';
+                var_dump($names);
+                echo '<br>';
+                foreach ($names as $name) {
+                    # code...
+                    echo $name . '<br>';
+                };
+                ?>
+            </p>
+            <div class="code_display">
+                <pre>
+                    &lt?php <br>
+                        $names1 = ['Alex', <br>
+                        'Billy', <br>
+                        'Dale']; <br>
+                        echo '&ltbr&gt'; <br>
+                        echo $names1[2] . '&ltbr&gt'; <br>
+                    ?&gt <br> 
+                </pre>
+            </div>
+            <p>
+                <?php
+                echo 'cela ne marche pas avec les tableaux associatifs' . '<br>';
+                $names1 = ['Alex', 
+                'Billy', 
+                'Dale'];
+                echo '<br>';
+                echo $names1[2] . '<br>';
+                ?>
+            </p>
+        </section>
+        <section class="multiDensional_arrays">
+            <h2>Multi-dimensional Arrays</h2>
+            <p> j'ai enlevé les saut de ligne du code
+                
+            </p>
+            <div class="code_display">
+                <pre>
+                &lt?php
+                $names = [
+                        'Alex' => [
+                            'age' => 21,
+                            'hair' => 'Blonde',
+                            'food' => [
+                                'Pizza',
+                                'Pasta',
+                            ],
+                        ],
+                        'Billy' => [
+                            'age' => 16,
+                            'hair' => 'Blonde',
+                        ],
+                        'Dale' => [
+                            'age' => 49,
+                            'hair' => 'Blonde',
+                        ]
+                        ];
+                    
+                    print_r ($names['Billy']);
+                    echo $names['Billy']['age'];
+                    echo print_r($names['Alex']['food']);
+                    echo $names['Alex']['food'][0];
+                ?&gt<br>
+                </pre>
+            </div>
+            <p>
+                <?php
+                    $names = [
+                        'Alex' => [
+                            'age' => 21,
+                            'hair' => 'Blonde',
+                            'food' => [
+                                'Pizza',
+                                'Pasta',
+                            ],
+                        ],
+                        'Billy' => [
+                            'age' => 16,
+                            'hair' => 'Blonde',
+                        ],
+                        'Dale' => [
+                            'age' => 49,
+                            'hair' => 'Blonde',
+                        ]
+                        ];
+                    
+                    print_r ($names['Billy']);
+                    echo '<br>';
+                    echo $names['Billy']['age'];
+                    echo '<br>';
+                    echo print_r($names['Alex']['food']);
+                    echo '<br>';
+                    echo $names['Alex']['food'][0];
+                    echo '<br>';
+                    
+
+                ?>
+            </p>
+        </section>
+        <section class="whileLoop">
+            <h2>While Loop</h2>
+            <div class="code_display">
+                <pre>
+                    &lt?php 
+                    $num = 10;
+                        while ($num >= 0){
+                            echo $num . '&ltbr&gt';
+                            $num--;
+                        }
+                    ?&gt
+                </pre>
+                <p>An other way to write it </p>
+                <pre>
+                    &lt?php 
+                        $num = 10;
+
+                        while ($num >= 0):
+                            echo $num . '&ltbr&gt'
+                            $num--;
+                        endwhile;
+                    ?&gt
+                </pre>
+            </div>
+            <p>
+                <?php
+                $num = 10;
+                while ($num >= 0){
+                    echo $num . '<br>';
+                    $num--;
+                }
+                ?>
+            </p>
+        </section>
+        <section class="doWhileLoop">
+            <h2>Do While Loop</h2>
+            <div class="code_display">
+                <p>This or That will be display ??</p>
+                <pre>
+                    &lt?php
+                    $num = 1;
+                    while($num != 1)
+                    {
+                        echo 'This';
+                    }
+
+                    do{
+                        echo 'That';
+                    }
+                    while ($num != 1);
+                    ?&gt
+                </pre>
+            </div>
+            <p>
+                <?php
+                    $num = 1;
+                    while($num != 1)
+                    {
+                        echo 'This';
+                    }
+
+                    do{
+                        echo 'That';
+                    }
+                    while ($num != 1);
+                ?>
+            </p>
+        </section>
+        <section class="forLoop">
+            <h2>For Loop</h2>
+            <div class="forLoopVertical">
+                <div class="left">
+                    <div class="code_display">
+                        <pre>
+                            &lt?php 
+                            for ($num = 1; $num  <= 10; $num++){
+                                echo 'This&ltbr&gt';
+                            }
+                            ?&gt
+                        </pre>
+                    </div>
+                    <p>
+                        <?php
+                        for ($num = 1; $num  <= 10; $num++){
+                            echo 'This<br>';
+                        }
+                        ?>
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="code_display">
+                        <pre>
+                            &lt?php 
+                            for ($num = 2; $num  <= 20; $num=$num+2){
+                                echo 'This&ltbr&gt';
+                            }
+                            ?&gt
+                        </pre>
+                    </div>
+                    <p>
+                        <?php
+                        for ($num = 2; $num  <= 20; $num=$num+2){
+                            echo $num. '<br>';
+                        }
+                        ?>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="foreach">
+            <h2>Foreach</h2>
+            <div class="code_display">
+                <pre>
+                        &lt?php <br>
+                            $names = [
+                            'Alex' => 21,
+                            'Billy'=> 16, 
+                            'Dale' => 49];
+                            foreach($names as $name => $value)
+                            {
+                                echo $name . ' is ' . $value . ' years old' .  '&ltbr&gt';
+                            }
+                        ?&gt
+                </pre>
+            </div>
+            <p>
+                <?php
+                    $names = [
+                        'Alex' => 21,
+                        'Billy'=> 16, 
+                        'Dale' => 49];
+                    foreach($names as $name => $value)
+                    {
+                        echo $name . ' is ' . $value . ' years old' .  '<br>';
+                    }
+                ?>
+            </p>
         </section>
     </main>
     <footer>
