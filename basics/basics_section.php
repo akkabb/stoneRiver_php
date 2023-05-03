@@ -851,6 +851,18 @@
                 ?>
             </p>
         </section>
+        <section class="cookies">
+            <h2>Cookies</h2>
+            <p><a href="cookie_page.php">Page For Examples</a></p>
+        </section>
+        <section class="checkboxes">
+            <h2>Checkboxes</h2>
+            <p><a href="checkboxes.php">Page For Examples</a></p>
+        </section>
+        <section class="radioButtons">
+            <h2>Radio Buttons</h2>
+            <p><a href="radioButtons.php">Page For Examples</a></p>
+        </section>
     </main>
     <footer>
         <p class="footer">2023 © Tous droits réservés</p>
