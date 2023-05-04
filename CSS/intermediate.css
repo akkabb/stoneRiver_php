@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg: #eee;
+}
+body{
+    background: var(--bg);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+.intermediateHeader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-135deg,#c850c0, #4158d8);
+    clip-path: circle(50px at calc(100% - 60px) 70px);
+    transition: all .3s ease-in-out;
+}
+input[type=checkbox]{
+    transform: scale(5);
+    opacity: 0;
+}
+#active{
+    position: absolute;
+    right: 53px;
+    top: 63px;
+    z-index: 2;
+}
+#active:checked ~.intermediateHeader{
+    clip-path: circle(75%);
+}
+.intermediateNav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+.intermediateNav li{
+    margin: 15px 0;
+}
+.intermediateNav li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 50px;
+    position: relative;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+.intermediateNav li a:after{
+    content: "";
+    position: absolute;
+    left: 0;    
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-radius: 50px;
+    transform: scaleY(0);
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+.intermediateNav li a:hover:after{
+    transform: scaleY(1);
+}
+.intermediateNav li a:hover{
+    color: #c850c0;
+}

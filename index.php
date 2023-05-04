@@ -22,6 +22,7 @@
             </div>
             <ul class="menu">
                 <li><a href="basics/basics_section.php" class="link_basics">basics of php</a></li>
+                <li><a href="Intermediate/intermediate.php" class="link_basics">Intermediate PHP</a></li>
             </ul>
         </aside>
     </main>
