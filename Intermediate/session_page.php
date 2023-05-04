@@ -11,6 +11,8 @@ $title = "sesion page";
 <body>
     <div class="container">
         <h1>Session Tuto</h1>
+        <span class="back_intermediate"><a href="intermediate.php">Back To Home Intermediate Session</a></span>
+
         <p>
             <?php
                 //$_SESSION['name'] = "Alex";

@@ -16,9 +16,9 @@ $title = 'Intermediate PHP';
             <li><a href="explode.php">Explode</a></li>
             <li><a href="implode.php">Implode</a></li>
             <li><a href="ternary.php">Ternary Operator</a></li>
-            <li><a href=".trueFalse.php">Quickly return True or False</a></li>
-            <li><a href=".split.php">Splitting a string by spaces</a></li>
-            <li><a href=".random_number.php">Generate a Random Number</a></li>
+            <li><a href="trueFalse.php">Quickly return True or False</a></li>
+            <li><a href="split.php">Splitting a string by spaces</a></li>
+            <li><a href="random_number.php">Generate a Random Number</a></li>
         </nav>
     </header>
 </body>

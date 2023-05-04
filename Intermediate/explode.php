@@ -8,6 +8,8 @@
 </head>
 <body>
     <div class="container">
+        <h1>Explode (string to array)</h1>
+        <span class="back_intermediate"><a href="intermediate.php">Back To Home Intermediate Session</a></span>
             <div class="code_display">
                 <pre>
                     &lt?php 
@@ -16,7 +18,7 @@
 
                         print_r($likes);
                         foreach($likes as $key => $like){
-                            echo '<br>' . $like, ' at position ' , $key,  '<br>';
+                            echo '&ltbr&gt' . $like, ' at position ' , $key,  '&ltbr&gt';
                         }
                     ?&gt 
                 </pre>
