@@ -23,6 +23,7 @@
             <ul class="menu">
                 <li><a href="basics/basics_section.php" class="link_basics">basics of php</a></li>
                 <li><a href="Intermediate/intermediate.php" class="link_basics">Intermediate PHP</a></li>
+                <li><a href="PDO/PDO.php" class="link_basics">PHP Data Objects</a></li>
             </ul>
         </aside>
     </main>
