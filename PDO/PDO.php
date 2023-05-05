@@ -151,6 +151,193 @@ $title = 'PHP Data Objects (PDO)';
         <?php endwhile; ?>
         <?php //var_dump($user);?>
     </div>
-    <h2>Fetch All</h2>
+    <h2>Fetch All</h2> 
+    <div class="code_display">
+        <pre>
+            &lt?php
+            $peeps = $db->query("
+            SELECT * FROM users
+            ");
+            $ForMYpeeps = $peeps->fetchAll(PDO::FETCH_OBJ);
+            
+            foreach ($ForMYpeeps as $peep){
+                echo $peep->email, '&ltbr&gt';
+            }
+            ?&gt 
+        </pre>
+    </div>
+    <p>
+        <?php
+            $peeps = $db->query("
+            SELECT * FROM users
+            ");
+            $ForMYpeeps = $peeps->fetchAll(PDO::FETCH_OBJ);
+            
+            foreach ($ForMYpeeps as $peep){
+                echo $peep->email, '<br>';
+            }
+            ?>
+    </p>
+    <p>We display it embedding with html looks like :</p>
+    <div class="code_display">
+        <pre>
+            &lt?php
+                &lt?php foreach($ForMYpeeps as $peep): ?&gt
+                    &ltdiv class="peeps"?&gt
+                        &lth4>&lt?php echo $peep->first_name;??&gt&lt/h4?&gt
+                        &ltp>&lt?php echo $peep->email;??&gt&lt/p?&gt
+                    &lt/div?&gt
+                &lt?php endforeach ??&gt
+            ?&gt 
+        </pre>
+    </div>
+    <p>
+        <?php foreach($ForMYpeeps as $peep): ?>
+            <div class="peeps">
+                <h4><?php echo $peep->first_name;?></h4>
+                <p><?php echo $peep->email;?></p>
+            </div>
+        <?php endforeach ?>
+    </p>
+    <section class="fetchAsObject">
+        <h2>Fetch as Object</h2>
+        <p>Gud Practice is to put the Class in a separate file</p>
+        <div class="code_display">
+            <pre>
+                &lt?php
+                    class User
+                    {
+                        public string $first_name;
+                        public string $last_name;
+
+                            public function getFullName()
+                            {
+                                return "{$this->first_name} {$this->last_name}";
+                            }
+                    }
+                    $Pool = $db->query("
+                        SELECT * FROM users
+                    ");
+                    $Pool->setFetchMode(PDO::FETCH_CLASS, 'User');
+                    //$Pool = $Pool->fetch();
+
+                // echo '&ltpre>&gt, var_dump($Pool) , '&lt/pre&gt';
+                while ($user = $Pool->fetch()){
+                        echo $user->getFullName(), '&ltbr>'&gt
+                }
+                ?&gt 
+            </pre>
+        </div>
+        <p>
+            <?php 
+                class User
+                {
+                    public string $first_name;
+                    public string $last_name;
+
+                        public function getFullName()
+                        {
+                            return "{$this->first_name} {$this->last_name}";
+                        }
+                }
+                $Pool = $db->query("
+                    SELECT * FROM users
+                ");
+                $Pool->setFetchMode(PDO::FETCH_CLASS, 'User');
+                //$Pool = $Pool->fetch();
+
+               // echo '<pre>', var_dump($Pool) , '</pre>';
+               while ($user = $Pool->fetch()){
+                    echo $user->getFullName(), '<br>';
+               }
+            ?>
+        </p>
+    </section>
+    <section class="rowCount">
+        <h2>Row Count</h2>
+        <div class="code_display">
+            <pre>
+                &lt?php 
+                    $PEE = $db->query("
+                        SELECT count(id) AS count FROM users
+                    ");
+
+                    $PEE = $PEE->fetchObject();
+
+                    echo $PEE->count;
+                ?&gt 
+            </pre>
+        </div>
+        <p>
+            <?php
+                $PEE = $db->query("
+                    SELECT count(id) AS count FROM users
+                ");
+
+                $PEE = $PEE->fetchObject();
+
+                 echo $PEE->count;
+            ?>
+        </p>
+        <p></p>
+        <div class="code_display">
+            <pre></pre>
+        </div>
+        <p>
+            <?php
+                $peepsQuery = $db->query("
+                    SELECT * FROM users
+                ");
+                // var_dump($PeepsQuery);
+                $PEE = $peepsQuery->fetchAll(PDO::FETCH_OBJ);
+
+                 echo $peepsQuery->rowCount();
+            ?>
+        </p>
+        <p>There are <?php echo $peepsQuery->rowCount(); ?> registered users :</p>
+               <?php foreach ($PEE as $user): ?>
+                <?php echo $user->email?><br>
+                <?php endforeach; ?>
+    </section>
+    <section class="project">
+                <h2><a href="userClass_date.php">Project - user class dates</a></h2>
+    </section>
+    <section class="escaping">
+        <h2><a href="escaping.php">Escaping</a></h2>
+    </section>
+    <section class="prepared_Statements">
+        <h2>Prepared statement</h2>
+        <div class="code_display">
+            <pre>
+                if (!empty($_GET['user'])){
+                    $user = $db->prepare("SELECT * FROM users WHERE id = :user_id AND first_name = :first_name");
+
+
+                    $user->execute([
+                        'user_id' => $_GET['user'],
+                        'first_name' => $_GET['name']
+                    ]);
+                    var_dump($user->fetchObject());
+                }
+            </pre>
+        </div>
+        <p>
+            <?php
+                if (!empty($_GET['user'])){
+                    $user = $db->prepare("SELECT * FROM users WHERE id = :user_id AND first_name = :first_name");
+
+
+                    $user->execute([
+                        'user_id' => $_GET['user'],
+                        'first_name' => $_GET['name']
+                    ]);
+                    var_dump($user->fetchObject());
+                }
+            ?>
+        </p>
+    </section>
+    <section class="inserting">
+        <h2><a href="inserting.php">Inserting && last insert id</a></h2>
+    </section>
 </body>
 </html>
