@@ -75,5 +75,8 @@
         </div>
         <input type="submit" value="register">
     </form>
+    <footer>
+        <p class="footer">2023 © Tous droits réservés</p>
+    </footer>
 </body>
 </html>

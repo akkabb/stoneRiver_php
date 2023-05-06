@@ -9,6 +9,18 @@
 <body>
     <div class="code_display">
             <pre>
+                &lt?php 
+                $db = new PDO('mysql:localhost=3306;dbname=pdo','root','root');
+                var_dump($db);
+                if (!empty($_GET['user'])){
+                    echo $userId = $db->quote($_GET['user']);
+                    
+                    $user = $db->query("
+                        SELECT * FROM users WHERE id = 1
+                    ");
+                    var_dump($user->fetchObject());
+                }
+            &gt>
 
             </pre>
     </div>
