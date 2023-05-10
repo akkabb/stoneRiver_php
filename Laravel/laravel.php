@@ -12,5 +12,8 @@
     <main class="main_laravel">
         <h1>Need to be done</h1>
     </main>
+    <footer>
+        <p class="footer">2023 © Tous droits réservés</p>
+    </footer>
 </body>
 </html>

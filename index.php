@@ -27,6 +27,7 @@
                 <li><a href="PHP_&_MySQLi_Database_Integration/mysqli.php" class="link_basics">PHP and MySQLi Database Integration</a></li>
                 <li><a href="Laravel/laravel.php" class="link_basics">Working with Laravel 4</a></li>
                 <li><a href="Common_PHP_Errors/php_errors.php" class="link_basics">Common PHP Errors</a></li>
+                <li><a href="PHP_SECURITY/php_security.php" class="link_basics">PHP security</a></li>
             </ul>
         </aside>
     </main>

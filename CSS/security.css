@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    background-image: url('../PHP_SECURITY/img/main.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+a{
+    color: #fff; 
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.securityNav{
+    list-style: none;
+}
+#active{
+    background: lawngreen;
+    position: absolute;
+    right: 53px;
+    top: 63px;
+    z-index: 2;
+    clip-path: circle(30px at 90% 40px);
+    transition: clip-path .5s;
+}
+input[type=checkbox]{
+    transform: scale(5);
+    /* opacity: 0; */
+}
