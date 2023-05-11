@@ -28,6 +28,8 @@
                 <li><a href="Laravel/laravel.php" class="link_basics">Working with Laravel 4</a></li>
                 <li><a href="Common_PHP_Errors/php_errors.php" class="link_basics">Common PHP Errors</a></li>
                 <li><a href="PHP_SECURITY/php_security.php" class="link_basics">PHP security</a></li>
+                <li><a href="BB_Codes/bb_codes.php" class="link_basics">BB codes</a></li>
+                <li><a href="Website_UP_or_DOWN/upordown.php" class="link_basics">How to check if a website is up or down</a></li>
             </ul>
         </aside>
     </main>
