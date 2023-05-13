@@ -31,7 +31,8 @@
                 <li><a href="BB_Codes/bb_codes.php" class="link_basics">BB codes</a></li>
                 <li><a href="Website_UP_or_DOWN/upordown.php" class="link_basics">How to check if a website is up or down</a></li>
                 <li><a href="create_Like_button/likeButton.php" class="link_basics">How to create a "Like" Button</a></li>
-                <li><a href="photo_album.php" class="link_basics">Build a Non-database Photo Album, plus LightBox</a></li>
+                <li><a href="Non-database_PhotoAlbum/photo_album.php" class="link_basics">Build a Non-database Photo Album, plus LightBox</a></li>
+                <li><a href="photo_album.php" class="link_basics">How to create a mailing list</a></li>
             </ul>
         </aside>
     </main>
