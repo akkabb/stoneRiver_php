@@ -9,6 +9,7 @@
     <?php require_once'include/head.php';?>
 </head>
 <body>
+    <!-- <img src="data/thumbs/valley-7972374_640.jpg" alt=""> -->
     <?php
         $page = $_SERVER['PHP_SELF'];
 
@@ -38,35 +39,32 @@
             }
             closedir($handle);
          }else // if album selected
-         {
-            echo "an Album has been clicked";
-         }
-        // {
-        //     //check if album exists, and additionnal security checks
-        //     if (!is_dir($base."/".$get_album) || (strstr($get_album, ".") != NULL) || (strstr($get_album, "/") != NULL) || (strstr($get_album, "\\") !=NULL))
-        //         echo "Album does't exist.";
-        //     else{
-        //         echo "<p><b>".$get_album."</b></p>";
-        //         $x = 0;
-        //         // open album directory to display each image
-        //         $handle = opendir($base."/".$get_album);
-        //         while (false !== ($file = readdir($handle)))
-        //         {
-        //             if ($file != "." && $file != "..")
-        //             {
-        //                 echo "";
-        //                 $x++;
+        {
+            //check if album exists, and additionnal security checks
+            if (!is_dir($base."/".$get_album) || (strstr($get_album, ".") != NULL) || (strstr($get_album, "/") != NULL) || (strstr($get_album, "\\") !=NULL))
+                echo "Album does't exist.";
+            else{
+                echo "<p><b>".$get_album."</b></p>";
+                $x = 0;
+                // open album directory to display each image
+                $handle = opendir($base."/".$get_album);
+                while (($file = readdir($handle)) !== FALSE)
+                {
+                    if ($file != "." && $file != "..")
+                    {
+                        echo "<img src='$base/$get_album/$file'>";
+                        // $x++;
 
-        //                 if ($x == $column)
-        //                 {
-        //                     $x = 0;
-        //                     echo "<br>";
-        //                 }
-        //             }
-        //         }
-        //         closedir($handle);
-        //     }
-         //}
+                        // if ($x == $column)
+                        // {
+                        //     $x = 0;
+                        //     echo "<br>";
+                        // }
+                    }
+                }
+                closedir($handle);
+            }
+         }
     ?>
 </body>
 </html>
