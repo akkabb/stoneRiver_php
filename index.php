@@ -34,6 +34,8 @@
                 <li><a href="Non-database_PhotoAlbum/photo_album.php" class="link_basics">Build a Non-database Photo Album, plus LightBox</a></li>
                 <li><a href="Mailing_list/mailing_list.php" class="link_basics">How to create a mailing list</a></li>
                 <li><a href="Spell_checker/spellChecker.php" class="link_basics">How to create a Spell Checker</a></li>
+                <li><a href="Template_Engine/templateEngine.php" class="link_basics">How to create a Template Engine</a></li>
+                <li><a href="Guestbook/guestbook.php" class="link_basics">How to create a Guestbook</a></li>
             </ul>
         </aside>
     </main>
