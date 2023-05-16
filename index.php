@@ -36,6 +36,7 @@
                 <li><a href="Spell_checker/spellChecker.php" class="link_basics">How to create a Spell Checker</a></li>
                 <li><a href="Template_Engine/templateEngine.php" class="link_basics">How to create a Template Engine</a></li>
                 <li><a href="Guestbook/guestbook.php" class="link_basics">How to create a Guestbook</a></li>
+                <li><a href="Currency_conversion/currencyConversion.php" class="link_basics">Currency conversion using google calculator api</a></li>
             </ul>
         </aside>
     </main>
