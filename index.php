@@ -37,6 +37,8 @@
                 <li><a href="Template_Engine/templateEngine.php" class="link_basics">How to create a Template Engine</a></li>
                 <li><a href="Guestbook/guestbook.php" class="link_basics">How to create a Guestbook</a></li>
                 <li><a href="Currency_conversion/currencyConversion.php" class="link_basics">Currency conversion using google calculator api</a></li>
+                <li><a href="RSS_feed/rss_feed.php" class="link_basics">Creating a dynamic RSS feed for you website conent</a></li>
+                <li><a href="phpStringFunctions/string_functions.php" class="link_basics">PHP string functions you should know</a></li>
             </ul>
         </aside>
     </main>
