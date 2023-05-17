@@ -69,7 +69,7 @@ SLIDE-MENU
 }
 .menu{
     width: 50%;
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 80px;
     list-style: none;
     color: #fff;

@@ -39,6 +39,9 @@
                 <li><a href="Currency_conversion/currencyConversion.php" class="link_basics">Currency conversion using google calculator api</a></li>
                 <li><a href="RSS_feed/rss_feed.php" class="link_basics">Creating a dynamic RSS feed for you website conent</a></li>
                 <li><a href="phpStringFunctions/string_functions.php" class="link_basics">PHP string functions you should know</a></li>
+                <li><a href="Email_pipping/email_pipping.php" class="link_basics">E-mail Pipping : Process E-mails with PHP</a></li>
+                <li><a href="FindAndReplace/find_replace.php" class="link_basics">Find and Replace Text</a></li>
+                <li><a href="Mini_shoppingCart/shopping_cart.php" class="link_basics">Create a mini shopping cart</a></li>
             </ul>
         </aside>
     </main>
