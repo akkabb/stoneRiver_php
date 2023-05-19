@@ -42,6 +42,11 @@
                 <li><a href="Email_pipping/email_pipping.php" class="link_basics">E-mail Pipping : Process E-mails with PHP</a></li>
                 <li><a href="FindAndReplace/find_replace.php" class="link_basics">Find and Replace Text</a></li>
                 <li><a href="Mini_shoppingCart/shopping_cart.php" class="link_basics">Create a mini shopping cart</a></li>
+                <li><a href="FB_App/fb_app.php" class="link_basics">Introduction to Facebook Application Development</a></li>
+                <li><a href="Chat_app/chat_app.php" class="link_basics">Create a PHP/AJAX Chat application</a></li>
+                <li><a href="Multiple_FileUploading/multipleFileUploading.php" class="link_basics">Working with multiple file uploading</a></li>
+                <li><a href="HitCounter/hit_counter.php" class="link_basics">Create your own non-unique hit counter</a></li>
+                <li><a href="RatingSystem/rating_system.php" class="link_basics">Create a rating system for your website</a></li>
             </ul>
         </aside>
     </main>
