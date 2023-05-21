@@ -6,7 +6,10 @@
     <?php require_once('include/head.php');?>
 <body>
     <main class="main_ShoppingCart">
-
+    <?php 
+        echo products();
+        echo cart();
+    ?>
     </main>
     <footer>
         <p class="footer">2023 © Tous droits réservés</p>

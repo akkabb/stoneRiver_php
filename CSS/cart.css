@@ -1,0 +1,30 @@
+.display_items, .display_result{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.button{
+    padding: 1em;
+    margin-left: .5em;
+    background: chartreuse;
+    border: 1px solid #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1px 8px 1px 8px;
+    border-radius: 4px;
+    display: inline;
+}
+.button:hover{
+    box-shadow: 1px 3px 15px #000;
+}
+.add_btn{
+    margin: 0 .5em;
+    background: violet;
+}
+.del_btn{
+    background: red;
+}
+/* .display_result{
+
+} */
