@@ -47,6 +47,9 @@
                 <li><a href="Multiple_FileUploading/multipleFileUploading.php" class="link_basics">Working with multiple file uploading</a></li>
                 <li><a href="HitCounter/hit_counter.php" class="link_basics">Create your own non-unique hit counter</a></li>
                 <li><a href="RatingSystem/rating_system.php" class="link_basics">Create a rating system for your website</a></li>
+                <li><a href="FEEDS/xml_rss_atom.php" class="link_basics">How to read XML, RSS and ATOM feeds</a></li>
+                <li><a href="Url_Shortener/urlShort.php" class="link_basics">Create your own URL shortener</a></li>
+                <li><a href="RegularExpressions/regular_expressions.php" class="link_basics">Understanding regular expressions</a></li>
             </ul>
         </aside>
     </main>
