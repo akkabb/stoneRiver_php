@@ -4,6 +4,7 @@
 ?>
 <head>
     <?php require_once('include/head.php');?>
+</head>
 <body>
     <main class="main_ShoppingCart">
     <?php 
