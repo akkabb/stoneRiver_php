@@ -50,6 +50,11 @@
                 <li><a href="FEEDS/xml_rss_atom.php" class="link_basics">How to read XML, RSS and ATOM feeds</a></li>
                 <li><a href="Url_Shortener/urlShort.php" class="link_basics">Create your own URL shortener</a></li>
                 <li><a href="RegularExpressions/regular_expressions.php" class="link_basics">Understanding regular expressions</a></li>
+                <li><a href="searchEngine/search_engine.php" class="link_basics">Create your own search engine for a database</a></li>
+                <li><a href="Secure_File/secureFileUploading.php" class="link_basics">Secure file uploading</a></li>
+                <li><a href="Shoutbox_System/shoutbox.php" class="link_basics">How to create a shoutbox system</a></li>
+                <li><a href="Thumbnail/thumbnailImageGenerator.php" class="link_basics">Create a thumbnail image generator</a></li>
+                <li><a href="Watermark/watermark.php" class="link_basics">How to watermark an image on upload</a></li>
             </ul>
         </aside>
     </main>
