@@ -19,12 +19,12 @@ $title = 'Url shortener';
             <p class="urlShort.subtitle">Go ahead, enter a long URL and have it shortened.</p>
         </header>
         <div class="url_field">
-            <input type="text">
-            <input type="submit" value="shortener">
+            <input type="text" id="url" name="url" onkeydown="if (event.keyCode == 13 || event.which == 13) { }">
+            <input type="button" value="shorten" onclick="">
         </div>
         <div class="code_display"></div>
         <div class="footer">
-            <p>Brought to you by <a>akkabb</a></p>
+            <p>Brought to you by <a href="#">akkabb</a></p>
         </div>
     </main>
 </body>

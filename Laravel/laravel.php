@@ -11,6 +11,7 @@
 <body>
     <main class="main_laravel">
         <h1>Need to be done</h1>
+        <h2>I watched all videos</h2>
     </main>
     <footer>
         <p class="footer">2023 © Tous droits réservés</p>
