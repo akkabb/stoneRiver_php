@@ -8,6 +8,10 @@
     <title>Understanding Regular Expressions</title>
 </head>
 <body>
-    
+    <div class="container">
+        <main class="main_regularEXp">
+            <h1>All Videos watched</h1>
+        </main>
+    </div>
 </body>
 </html>
