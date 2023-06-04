@@ -55,6 +55,9 @@
                 <li><a href="Shoutbox_System/shoutbox.php" class="link_basics">How to create a shoutbox system</a></li>
                 <li><a href="Thumbnail/thumbnailImageGenerator.php" class="link_basics">Create a thumbnail image generator</a></li>
                 <li><a href="Watermark/watermark.php" class="link_basics">How to watermark an image on upload</a></li>
+                <li><a href="Forgery_Protection/crossSite.php" class="link_basics">Cross Site Request Forgery Protection</a></li>
+                <li><a href="DropDownField/dropdownfield.php" class="link_basics">Create an Auto-suggest drop down field</a></li>
+                <li><a href="pageLanguages/Translate_page.php" class="link_basics">How to translate page languages</a></li>
             </ul>
         </aside>
     </main>
