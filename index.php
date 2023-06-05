@@ -58,6 +58,10 @@
                 <li><a href="Forgery_Protection/crossSite.php" class="link_basics">Cross Site Request Forgery Protection</a></li>
                 <li><a href="DropDownField/dropdownfield.php" class="link_basics">Create an Auto-suggest drop down field</a></li>
                 <li><a href="pageLanguages/Translate_page.php" class="link_basics">How to translate page languages</a></li>
+                <li><a href="OOP/oop.php" class="link_basics">Understanding Object Oriented Programming</a></li>
+                <li><a href="ImageUpload/imageUpload.php" class="link_basics">How to create an image upload website</a></li>
+                <li><a href="Tuto/PHP_expert.php" class="link_basics">General Tutorials : Become a PHP Expert</a></li>
+                <li><a href="OOP_Fundamentals/php_oop.php" class="link_basics">PHP Object Oriented Programming Fundamentals</a></li>
             </ul>
         </aside>
     </main>
