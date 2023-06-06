@@ -1,0 +1,27 @@
+.city{
+    margin-bottom: 1em;
+}
+#city{
+    margin-top: 1em;
+}
+.form{
+    margin-bottom: 5em;
+}
+.result{
+    margin: 0;
+    width: 170px;
+    padding-left: 0;
+}
+.result li{
+    list-style: none;
+    padding: 5px;
+    border: 1px solid #000;
+    border-top: 0;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
