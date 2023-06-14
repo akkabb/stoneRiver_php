@@ -13,6 +13,11 @@
         <section>
             <h2><a href="practice/classes.php">Classes, Methods and Properties</a></h2>
             <h2><a href="practice/calculatorApp.php">Calculator App</a></h2>
+            <h2><a href="practice/constructor.php">Constructor Method</a></h2>
+            <h2><a href="practice/protecting.php">Protecting Methods / properties</a></h2>
+            <h2><a href="practice/extending.php">Extending a class (inheritance)</a></h2>
+            <h2><a href="practice/static.php">Static Properties and Methods</a></h2>
+            <h2><a href="practice/DBexample.php">MySQL Database Example</a></h2>
         </section>
     </main>
     <footer>

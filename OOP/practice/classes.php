@@ -23,11 +23,11 @@ require_once "product.php";
         <div class="practice">
             <h3></h3>
             <?php
-            
-            
+               $food = new Product(); 
+               $food->setProductType('Food'); 
+               echo "This Item is ". $food->getProductType(); 
             ?>
         </div>
-        <h2></h2>
     </main>
 </body>
 </html>
