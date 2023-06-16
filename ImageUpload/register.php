@@ -1,6 +1,12 @@
 <?php
 $title = "register.php";
 require_once('init.php');
+
+if (logged_in()) {
+    header('Location: index.php');
+    exit();
+}
+
 require_once('include/header.php');
 ?>
 
@@ -31,7 +37,11 @@ require_once('include/header.php');
                 echo $error . '<br>';
             } 
         } else {
-
+            $register = user_register($register_email, $register_name, $register_password);
+            $_SESSION['user_id'] = $register;
+            echo $_SESSION['user_id'];
+            // header('Location : imageUpload.php');
+            // exit();
         }
         // print_r($errors);
     }
